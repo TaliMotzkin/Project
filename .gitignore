@@ -1,0 +1,9 @@
+datasets/fish/fish_coords_20_normalized_100.csv
+datasets/fish/fish_coords_36_normalized_100.csv
+datasets/fish/fish_coords_48_normalized_100.csv
+datasets/eth/raw
+datasets/nba/target
+datasets/SDD/SDD_test.pt
+datasets/SDD/SDD_train.pt
+datasets/SDD/SDD_val.pt
+datasets/SDD/raw
