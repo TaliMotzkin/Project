@@ -1,7 +1,7 @@
 # Be Part of the Team: Defining and Modelling Covert Agents in Multi-Agent Systems
 
 
-![Overview of the two architectures examined for researching covertness](imgs/overview.png) *Overview of the two architectures examined for researching covertness. Structured in three stages. The left-hand side depicts the GroupNet scheme: Panel (a) shows the base model $G_1$, panel (b) integrates mission embedding into $G_1$, resulting in $GM_\alpha$, and panel (c) shows the adversarial model trained for covertness, $nGAN_G$. The right-hand side illustrates the Sampler scheme with the same three stages: Panel (d) shows $S_{HG}$, panel (e) shows $SM_\alpha$, and panel (f) presents $nGAN_S$. The Encoder-Decoder blocks correspond to the original CVAE architecture of [GroupNet](https://arxiv.org/abs/2204.08770) . Also code was based on GroupNet's.* 
+![Overview of the two architectures examined for researching covertness](imgs/overview.png) Overview of the two architectures examined for researching covertness. Structured in three stages. The left-hand side depicts the GroupNet scheme: Panel (a) shows the base model $G_1$, panel (b) integrates mission embedding into $G_1$, resulting in $GM_\alpha$, and panel (c) shows the adversarial model trained for covertness, $nGAN_G$. The right-hand side illustrates the Sampler scheme with the same three stages: Panel (d) shows $S_{HG}$, panel (e) shows $SM_\alpha$, and panel (f) presents $nGAN_S$. The Encoder-Decoder blocks correspond to the original CVAE architecture of [GroupNet](https://arxiv.org/abs/2204.08770) . Also code was based on GroupNet's. 
 
 **Abstract**: In this work, we introduce the unexplored concept of covertness: the ability of artificial
 covert agents ($C$) to behave indistinguishably from realistic collectives ($S$) while pursuing distinct goals, such
@@ -17,7 +17,7 @@ as match-fixing detection in sports and security applications.
 To address these challenges, we introduce a three-stage framework. First, we develop close-to-realistic simulators, modelling
 the dynamics of collectives using predictive models, further enhanced with a sampling approach to improve accuracy. The
 second stage extends these models to create mission-aware agents ($C$), which demonstrate higher goal achievement;
-however, their appearance often deviates from the expected distribution. In the third stage, we refine $C$s' behaviour
+however, their appearance often deviates from the expected distribution. In the third stage, we refine $C$ behaviour
 using a Generative Adversarial Network (GAN), which trains them to remain undetected within the $S$ collective. 
 
 Evaluations were conducted across fish, NBA players, and pedestrian datasets. In all datasets, within the GAN framework,
