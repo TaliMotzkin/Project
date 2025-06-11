@@ -1,7 +1,7 @@
 # Be Part of the Team: Defining and Modelling Covert Agents in Multi-Agent Systems
 
 
-![](imgs/overview.png)
+![Overview of the two architectures examined for researching covertness](imgs/overview.png) *Structured in three stages. The left-hand side depicts the GroupNet scheme: Panel (a) shows the base model $G_1$, panel (b) integrates mission embedding into $G_1$, resulting in $GM_\alpha$, and panel (c) shows the adversarial model trained for covertness, $nGAN_G$. The right-hand side illustrates the Sampler scheme with the same three stages: Panel (d) shows $S_{HG}$, panel (e) shows $SM_\alpha$, and panel (f) presents $nGAN_S$. The Encoder-Decoder blocks correspond to the original CVAE architecture of [GroupNet](https://arxiv.org/abs/2204.08770) . Also code was based on GroupNet's.  
 
 **Abstract**: In this work, we introduce the unexplored concept of covertness: the ability of artificial
 covert agents ($C$) to behave indistinguishably from realistic collectives ($S$) while pursuing distinct goals, such
