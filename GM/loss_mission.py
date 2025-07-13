@@ -244,11 +244,13 @@ class LossGroupnet:
 
             # Not achieved & within reach & same direction --> distance + direction
             mask_4 = mask_not_achieved  & within_reach&mask_direction_good
-            mission_loss[mask_4] =  min_distance[mask_4] + 0.2 * direction_loss[mask_4]
+            #mission_loss[mask_4] =  min_distance[mask_4] + 0.2 * direction_loss[mask_4]
+            mission_loss[mask_4] = min_distance[mask_4] + args.mask4_coef * direction_loss[mask_4]
             #
             #  # Not achieved & within reach & opposite direction --> heavier combined loss
             mask_5 = mask_not_achieved & within_reach&mask_direction_bad
-            mission_loss[mask_5] = min_distance[mask_5] + 2.5 * direction_loss[mask_5]
+            # mission_loss[mask_5] = min_distance[mask_5] + 2.5 * direction_loss[mask_5]
+            mission_loss[mask_5] = min_distance[mask_5] + args.mask5_coef * direction_loss[mask_5]
 
             mission_weight = min(2.0, epoch / 10)
             mission_loss_final = (mission_weight * mission_loss).mean()

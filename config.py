@@ -92,6 +92,8 @@ def parse_args():
     parser.add_argument('--disc_type', type=str, default='groupnet-gan')
     parser.add_argument('--epoch_continue', type=int, default=0)
     parser.add_argument('--agents_to_plot', type=int, default=1)
+    parser.add_argument('--mask5_coef', type=float, default=2.5)
+    parser.add_argument('--mask4_coef', type=float, default=0.2)
 
     args = parser.parse_args()
     args.device = "cuda" if torch.cuda.is_available() else "cpu"
